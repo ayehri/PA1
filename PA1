@@ -1,0 +1,109 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "4391edf9-abec-4da9-81ab-cb9f59c00a74",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a word:  ayesha\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "aaehsy\n"
+     ]
+    }
+   ],
+   "source": [
+    "def alphabet_soup(word):\n",
+    "    letters = sorted(word)\n",
+    "    sort_alphabet_soup = \"\".join(letters)\n",
+    "    print(sort_alphabet_soup)\n",
+    "\n",
+    "user_input = input(\"Enter a word: \")\n",
+    "alphabet_soup(user_input)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "d0f874dd-c363-4279-8c7d-34ece5b78e37",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a sentence:  MAKE ME SMILE\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "MAKE ME :)\n"
+     ]
+    }
+   ],
+   "source": [
+    "def emoticon(sentence):\n",
+    "    emoticons = {\"smile\": \":)\", \"grin\": \":D\", \"sad\": \":((\", \"mad\": \">:(\"}\n",
+    "    return \" \".join(emoticons.get(word.lower(), word) for word in sentence.split())\n",
+    "\n",
+    "text = input(\"Enter a sentence: \")\n",
+    "print(emoticon(text))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "a960ab69-27c0-4524-96d3-9ebf97913d49",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "First:  1\n",
+      "Midlle:  [2, 3, 4, 5]\n",
+      "Last:  6\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = [1,2,3,4,5,6]\n",
+    "print(\"First: \",n[0])\n",
+    "print(\"Midlle: \",n[1:-1])\n",
+    "print(\"Last: \",n[5])"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
