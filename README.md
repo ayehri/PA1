@@ -25,6 +25,7 @@ I. Intended Learning Outcomes
 1. Alphabet Soup Problem
    
    
+   
    Code:
    
    
@@ -44,6 +45,7 @@ user_input = input("Enter a word: ")
 
 
 alphabet_soup(user_input)
+
 
 
    Output:
