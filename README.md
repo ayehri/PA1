@@ -70,10 +70,10 @@ alphabet_soup(user_input)
    print(sort_alphabet_soup): Displays the final sorted word.
    
    
-   user_input = input("Enter a word: "): Prompts the user to type a word and stores it in the variable user_input.
+user_input = input("Enter a word: "): Prompts the user to type a word and stores it in the variable user_input.
    
    
-   alphabet_soup(user_input): runs the function and uses the word typed by the user.
+alphabet_soup(user_input): runs the function and uses the word typed by the user.
    
    
 2. Emoticon Problem
@@ -85,10 +85,10 @@ alphabet_soup(user_input)
    def emoticon(sentence):
    
    
-    emoticons = {"smile": ":)", "grin": ":D", "sad": ":((", "mad": ">:("}
+   emoticons = {"smile": ":)", "grin": ":D", "sad": ":((", "mad": ">:("}
    
    
-    return " ".join(emoticons.get(word.lower(),word) for word in sentence.split())
+   return " ".join(emoticons.get(word.lower(),word) for word in sentence.split())
    
 
 text = input ("Enter a sentence: ")
