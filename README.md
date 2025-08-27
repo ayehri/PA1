@@ -74,6 +74,8 @@ user_input = input("Enter a word: "): Prompts the user to type a word and stores
    
    
 alphabet_soup(user_input): runs the function and uses the word typed by the user.
+
+
    
    
 2. Emoticon Problem
@@ -123,6 +125,8 @@ print(emoticon(text))
    
    
    print(emoticon(text)): runs the function and prints the sentence with emoticons.
+
+
    
 
 3. Unpacking List Problem
