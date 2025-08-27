@@ -26,9 +26,9 @@ I. Intended Learning Outcomes
    
    Code:
    def alphabet_soup(word): 
-    letters = sorted(word)
-    sort_alphabet_soup = "".join(letters)
-    print(sort_alphabet_soup)
+   letters = sorted(word)
+   sort_alphabet_soup = "".join(letters)
+   print(sort_alphabet_soup)
 
 user_input = input("Enter a word: ")
 alphabet_soup(user_input)
