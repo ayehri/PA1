@@ -22,40 +22,25 @@ I. Intended Learning Outcomes
 
 # Code, Ouput, and Explanation:
 
-1. Alphabet Soup Problem
+## 1. Alphabet Soup Problem
    
    
    
-   Code:
-   
-   
-   def alphabet_soup(word):
-   
-   
-   letters = sorted(word)
-   
-   
-   sort_alphabet_soup = "".join(letters)
-   
-   
-   print(sort_alphabet_soup)
-   
-
-user_input = input("Enter a word: ")
+         ### Code:
+         def alphabet_soup(word):
+         letters = sorted(word)
+         sort_alphabet_soup = "".join(letters)
+         print(sort_alphabet_soup)
+         user_input = input("Enter a word: ")
+         alphabet_soup(user_input)
 
 
-alphabet_soup(user_input)
-
-
-
-   Output:
+### Output:
    
    Enter a word: hello
-   
-   
-   ehllo
+   - ehllo
 
-   Explanation: 
+### Explanation: 
    
    
    def alphabet_soup(word): def is used to define a function named alphabet_soup with one parameter, word.
@@ -70,45 +55,30 @@ alphabet_soup(user_input)
    print(sort_alphabet_soup): Displays the final sorted word.
    
    
-user_input = input("Enter a word: "): Prompts the user to type a word and stores it in the variable user_input.
+   user_input = input("Enter a word: "): Prompts the user to type a word and stores it in the variable user_input.
    
    
-alphabet_soup(user_input): runs the function and uses the word typed by the user.
+   alphabet_soup(user_input): runs the function and uses the word typed by the user.
 
 
+## 2. Emoticon Problem
    
    
-2. Emoticon Problem
-   
-   
-   Code:
-   
-   
-   def emoticon(sentence):
-   
-   
-   emoticons = {"smile": ":)", "grin": ":D", "sad": ":((", "mad": ">:("}
-   
-   
-   return " ".join(emoticons.get(word.lower(),word) for word in sentence.split())
-   
-
-text = input ("Enter a sentence: ")
+         ### Code:
+         def emoticon(sentence):
+         emoticons = {"smile": ":)", "grin": ":D", "sad": ":((", "mad": ">:("}
+         return " ".join(emoticons.get(word.lower(),word) for word in sentence.split())
+         text = input ("Enter a sentence: ")
+         print(emoticon(text))
 
 
-print(emoticon(text))
-
-
-   Output: 
-   
+  ### Output: 
    
    Enter a sentence: I am sad
-   
-   
-   I am :((
+   - I am :((
    
 
-   Explanation: 
+  ### Explanation: 
    
    
    def emoticon(sentence): defines a function called emoticon that takes a sentence.
@@ -127,39 +97,25 @@ print(emoticon(text))
    print(emoticon(text)): runs the function and prints the sentence with emoticons.
 
 
+## 3. Unpacking List Problem
+   
+   
+         ### Code:
+         n = [1,2,3,4,5,6]
+         print("First:",n[0])
+         print("Middle:",n[1:-1])
+         print("Last:",n[5])
    
 
-3. Unpacking List Problem
-   
-   
-   Code:
-   
-   
-   n = [1,2,3,4,5,6]
-   
-   
-   print("First:",n[0])
-   
-   
-   print("Middle:",n[1:-1])
-   
-   
-   print("Last:",n[5])
-   
-
-   Output:
-   
-   
+   ### Output:
    First: 1
-   
-   
+     
    Middle: [2, 3, 4, 5]
-   
    
    Last: 6
    
 
-   Explanation:
+  ### Explanation:
    
    
    n = [1,2,3,4,5,6]: creates a list of numbers.
